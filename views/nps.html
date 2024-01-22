@@ -34,40 +34,33 @@
 		  </nav>
 		</header>
 	
-	
 	<main>
-		<div class="formulario">			
-		<h2>Formulario de contacto</h2>
-		<br>
-		<h4>Indícanos tus datos y nos pondremos en contacto contigo a la brevedad.</h4>
-		<br>
-		<p>
-		<label for="nombre" class="indicar_nombre">Nombre </label>
-		<input type="text" name="introducir_nombre" id="nombre" required="obligatorio">
-		</p>
-								
-		<p>
-		<label for="email" class="indicar_email">Email</label>
-		<input type="email" name="introducir_email" id="email" required="obligatorio">
-		</p>
-							
-		<p>
-		<label for="telefone" class="indicar_telefono">Teléfono</label>
-		<input type="tel" name="introducir_telefono" id="telefono">
-		</p>		
-										
-		<p>
-		<label for="asunto" class="indicar_asunto">Asunto</label>
-		<input type="text" name="introducir_asunto" id="assunto" required="obligatorio">
-		</p>		
-								
-		<p>
-		<label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
-		<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"></textarea> 
-		</p>	  								
-								
-		<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>					
-		</div>	
+	<div class="formulario">			
+        <div>
+            <br>
+            <h1>Este es una calculadora de NPS (Net Promoter Score)</h1>
+            <br>
+            <label>Indique el nombre de la empresa:</label>
+            <input type="text" name="Nombre" placeholder="Ingrese nombre">
+            <br>
+            <br>
+            <label>Indique la cantidad de evaluaciones de 0 a 6: </label>
+            <input type="number" name="Detractores" placeholder="Ingrese un número">
+            <br>
+            <label>Indique la cantidad de evaluaciones de 7 a 8: </label>
+            <input type="number" name="Neutros" placeholder="Ingrese un número">
+            <br>
+            <label>Indique la cantidad de evaluaciones de 9 a 10: </label>
+            <input type="number" name="Promotores" placeholder="Ingrese un número">
+            <br>
+            <br>
+            <button id="boton-enviar">Enviar</button>
+            <br>
+            <div id="contenedor">
+            </div>
+            <script src="nps.js"></script>
+        </div>	 		
+	</div>	
 	</main>
 
 	<footer>
